@@ -1,7 +1,12 @@
 from flask import Flask, render_template, request, url_for, jsonify
-from config import API_KEY, BASE_URL
+from config import BASE_URL
 from weather_api import WeatherFetcher
 from logger import WeatherLogger
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 app = Flask(__name__)
 

@@ -1,35 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-      font-family: Arial, sans-serif;
-      background: #eef;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 100px;
-    }
-    .searchSet{
-      display: inline;
-      border: black solid 1px;
-      padding: 16px;
-      border-radius: 8px;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    input{
-      border: solid black 2px;
-      border-radius: 8px;
-      padding: 10px;
-      margin: 5px;
-      background-color: #eef;
-    }
-    button {
-      color : white;
-      background-color: green;
-      border: solid grey 2px;
-      border-radius: 8px;
-      padding: 8px;
-      margin: 5px;
-      cursor: pointer;
-    }
-    .result {
-      margin-top: 20px;
-      font-size: 16px;
-    }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  color: #fff;
+  transition: background 0.5s ease-in-out;
+  background: linear-gradient(135deg, #121212, #1f1f2e);
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.searchSet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.searchSet input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.searchSet input:focus {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+
+.searchSet button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #ffb347;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.searchSet button:hover {
+  background: #ffd56b;
+  transform: scale(1.05);
+}
+
+.result {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+  background: rgba(255, 255, 255, 0.15);
+
+}
+
+.result h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 1.1rem;
+  margin: 6px 0;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .searchSet {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .searchSet button,
+  .searchSet input {
+    width: 100%;
+  }
+
+  .result {
+    padding: 20px;
+  }
+}

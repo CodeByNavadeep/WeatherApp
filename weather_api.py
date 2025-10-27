@@ -20,7 +20,7 @@ class WeatherFetcher:
                 "city": data["name"],
                 "temperature": data["main"]["temp"],
                 "humidity": data["main"]["humidity"],
-                "condition": data["weather"][0]["description"],
+                "condition": data["weather"][0]["description"].capitalize(),
                 "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             }
             
