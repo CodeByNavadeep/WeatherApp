@@ -1,0 +1,6 @@
+{'city': 'Guntur', 'temperature': 23.71, 'humidity': 89, 'condition': 'overcast clouds', 'timestamp': '2025-10-27 01:08:32'}
+{'city': 'Tokyo', 'temperature': 15.17, 'humidity': 94, 'condition': 'broken clouds', 'timestamp': '2025-10-27 01:09:53'}
+{'city': 'Guntur', 'temperature': 23.71, 'humidity': 89, 'condition': 'overcast clouds', 'timestamp': '2025-10-27 01:10:05'}
+{'city': 'Hyderabad', 'temperature': 22.73, 'humidity': 100, 'condition': 'scattered clouds', 'timestamp': '2025-10-27 01:10:28'}
+{'city': 'Chennai', 'temperature': 26.88, 'humidity': 93, 'condition': 'mist', 'timestamp': '2025-10-27 01:14:15'}
+{'city': 'Guntur', 'temperature': 23.71, 'humidity': 89, 'condition': 'overcast clouds', 'timestamp': '2025-10-27 01:20:54'}

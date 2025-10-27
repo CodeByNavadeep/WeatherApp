@@ -1,0 +1,35 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #eef;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+    }
+    .searchSet{
+      display: inline;
+      border: black solid 1px;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    input{
+      border: solid black 2px;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 5px;
+      background-color: #eef;
+    }
+    button {
+      color : white;
+      background-color: green;
+      border: solid grey 2px;
+      border-radius: 8px;
+      padding: 8px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 16px;
+    }
