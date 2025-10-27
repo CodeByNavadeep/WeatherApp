@@ -30,3 +30,4 @@
 {'city': 'Guntur', 'temperature': 22.93, 'humidity': 96, 'condition': 'Overcast clouds', 'timestamp': '2025-10-27 22:53:41'}
 {'city': 'Guntur', 'temperature': 22.93, 'humidity': 96, 'condition': 'Overcast clouds', 'timestamp': '2025-10-27 22:54:46'}
 {'city': 'Guntur', 'temperature': 22.77, 'humidity': 96, 'condition': 'Light rain', 'timestamp': '2025-10-27 23:01:31'}
+{'city': 'Guntur', 'temperature': 22.8, 'humidity': 95, 'condition': 'Overcast clouds', 'timestamp': '2025-10-27 23:36:35'}
